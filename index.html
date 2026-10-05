@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>المتنبي | شاعر الدنيا وشاغل الناس</title>
+<meta name="description" content="سيرة أبي الطيب المتنبي: رحلة الحياة، ديوان مختارات، وأعلام عصره.">
+<!-- Fonts: preconnect + display=swap; CSS uses size-adjusted fallbacks to limit layout shift -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Reem+Kufi:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="cursor" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <a class="brand" href="#hero">المتنبي</a>
+  <button class="nav-toggle" aria-label="القائمة" aria-expanded="false"><span></span><span></span></button>
+  <nav class="nav-links">
+    <a href="#journey">الرحلة</a>
+    <a href="#poetry">الديوان</a>
+    <a href="#figures">الأعلام</a>
+  </nav>
+</header>
+
+<!-- A. HERO -->
+<section class="hero" id="hero">
+  <div class="hero-inner">
+    <h1 class="hero-name">أبو الطيب المتنبي</h1>
+    <p class="hero-dates">٣٠٣ – ٣٥٤ هـ &nbsp;|&nbsp; ٩١٥ – ٩٦٥ م</p>
+    <div class="hero-verse" id="heroVerse" aria-live="polite"></div>
+  </div>
+  <a href="#journey" class="scroll-cue" aria-label="انتقل إلى الرحلة"><span></span></a>
+</section>
+
+<!-- B. TIMELINE -->
+<section class="section" id="journey">
+  <h2 class="section-title">رحلة العمر</h2>
+  <ol class="timeline" id="timeline"></ol>
+</section>
+
+<!-- C. POETRY ARCHIVE -->
+<section class="section" id="poetry">
+  <h2 class="section-title">الديوان</h2>
+  <div class="tools">
+    <input type="search" id="poemSearch" placeholder="ابحث في الأبيات أو العناوين" aria-label="بحث">
+    <div class="chips" id="chips" role="group" aria-label="التصنيف"></div>
+  </div>
+  <div class="archive" id="archive"></div>
+  <p class="empty" id="empty" hidden>لا توجد نتائج. جرّب كلمة أخرى أو اختر «الكل».</p>
+</section>
+
+<!-- D. CHARACTER HUB -->
+<section class="section" id="figures">
+  <h2 class="section-title">أعلام عصره</h2>
+  <div class="hub" id="hub"></div>
+</section>
+
+<!-- Slider panel -->
+<aside class="panel" id="panel" aria-hidden="true">
+  <div class="panel-card" role="dialog" aria-modal="true" aria-labelledby="panelTitle">
+    <button class="panel-close" aria-label="إغلاق">×</button>
+    <h3 id="panelTitle"></h3>
+    <div class="slides" id="slides"></div>
+    <div class="panel-nav">
+      <button data-dir="1" aria-label="التالي">‹</button>
+      <span id="dots"></span>
+      <button data-dir="-1" aria-label="السابق">›</button>
+    </div>
+  </div>
+</aside>
+
+<footer class="foot">صُمّم بعناية &nbsp;|&nbsp; مشروع عرض أعمال</footer>
+<script src="app.js"></script>
+</body>
+</html>
